@@ -75,6 +75,7 @@
                         // alert(result.data.message)
                         this.$store.commit('settoken',result.token)
                         window.localStorage.setItem('token',result.token)
+                        this.$router.replace({path:'/index'})
                     }else{
                         alert(result.message)
                     }

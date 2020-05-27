@@ -49,10 +49,64 @@ module.exports = {
                         })
                     }
                 })
+                // 首页轮播图数据接口
+                app.get('/api/banner',(req,res)=>{
+                    res.json({
+                        data:[
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide01.png'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide02.png'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide03.png'
+                            }
+                        ]
+                    })
+                })
+                app.get('/api/rollimglist',(req,res)=>{
+                    res.json({
+                        data:[
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide01.png',
+                                label:'分类1'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide02.png',
+                                label:'分类1'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide03.png',
+                                label:'分类1'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide01.png',
+                                label:'分类1'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide02.png',
+                                label:'分类1'
+                            },
+                            {
+                                url: 'http://www.didichuxing.com/',
+                                image: '//webapp.didistatic.com/static/webapp/shield/cube-ui-examples-slide03.png',
+                                label:'分类1'
+                            }
+                        ]
+                    })
+                })
             }
         }
     },
-
     css: {
       loaderOptions: {
         stylus: {

@@ -15,7 +15,7 @@ export default function  setAxios() {
             return config
         }
     )
-    //每次的请求都是有返回的，都是先经过这个拦截器
+    //每次的请求都是有返回的，都是先经过这个拦截器，请求响应。
     axios.interceptors.response.use(
         response=>{
             if(response.status==200){
